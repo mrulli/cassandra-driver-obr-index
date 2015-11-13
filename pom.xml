@@ -57,6 +57,11 @@
 	    <version>${bnd.version}</version>
 	    <configuration>
         	<localURLs>ALLOWED</localURLs>
+        	<scopes>
+		        <scope>compile</scope>
+		        <scope>provided</scope>
+		        <scope>test</scope>
+		    </scopes>
         </configuration>
 	    <executions>
 	        <execution>
