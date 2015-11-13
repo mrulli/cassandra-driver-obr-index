@@ -22,10 +22,30 @@
 
   <name>java-driver-index</name>
   <url>http://maven.apache.org</url>
+  
+  <profiles>
+      <profile>
+          <id>CI_Build</id>
+          <properties>
+              <local.index.policy>FORBIDDEN</local.index.policy>
+          </properties>
+          <distributionManagement>
+              <repository>
+                  <id>Release My Index Here</id>
+                  <url>https://my.nexus.repo/nexus/content/repositories/releases/</url>
+              </repository>
+              <snapshotRepository>
+                  <id>Send My Snapshot Index Here</id>
+                  <url>http://my.nexus.repo/nexus/content/repositories/snapshots/</url>
+              </snapshotRepository>
+          </distributionManagement>
+      </profile>
+  </profiles>
 
   <properties>
   	<bnd.version>3.1.0</bnd.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <local.index.policy>REQUIRED</local.index.policy>
   </properties>
 
   <dependencies>
@@ -56,8 +76,8 @@
 	    <artifactId>bnd-indexer-maven-plugin</artifactId>
 	    <version>${bnd.version}</version>
 	    <configuration>
-        	<localURLs>ALLOWED</localURLs>
-        	<scopes>
+            <localURLs>${local.index.policy}</localURLs>
+            <scopes>
 		        <scope>compile</scope>
 		        <scope>provided</scope>
 		        <scope>test</scope>
