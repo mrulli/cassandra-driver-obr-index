@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1447407838608" name="Untitled" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.codahale.metrics.core"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.0.2"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="9e819c6f4d5f446e00cb05b08d0127226683b725a94d161288aea870c1bd2f63"/>
+      <attribute name="url" value="file:/Users/matteorulli/.m2/repository/com/codahale/metrics/metrics-core/3.0.2/metrics-core-3.0.2.jar"/>
+      <attribute name="size" type="Long" value="85448"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.codahale.metrics.core"/>
+      <attribute name="bundle-version" type="Version" value="3.0.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.codahale.metrics.core"/>
+      <attribute name="bundle-version" type="Version" value="3.0.2"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.codahale.metrics"/>
+      <attribute name="version" type="Version" value="3.0.2"/>
+      <attribute name="bundle-symbolic-name" value="com.codahale.metrics.core"/>
+      <attribute name="bundle-version" type="Version" value="3.0.2"/>
+      <directive name="uses" value="org.slf4j,javax.management,sun.misc"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.management)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.google.guava"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="a896857d07845d38c7dc5bbc0457b6d9b0f62ecffda010e5e9ec12d561f676d3"/>
+      <attribute name="url" value="https://repo.maven.apache.org/maven2/com/google/guava/guava/16.0.1/guava-16.0.1.jar"/>
+      <attribute name="size" type="Long" value="2228009"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.net"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="javax.annotation,com.google.common.base,com.google.common.hash,com.google.common.io,com.google.common.primitives,com.google.common.collect,com.google.common.escape"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.html"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="com.google.common.escape,javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.collect"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="com.google.common.base,javax.annotation,com.google.common.primitives,com.google.common.math"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.primitives"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="javax.annotation,com.google.common.base,sun.misc"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.base"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.escape"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="com.google.common.base,javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.cache"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="com.google.common.collect,com.google.common.util.concurrent,javax.annotation,com.google.common.base,com.google.common.primitives,sun.misc"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.eventbus"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="com.google.common.collect,com.google.common.cache,javax.annotation,com.google.common.base,com.google.common.util.concurrent,com.google.common.reflect"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.util.concurrent"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="com.google.common.base,javax.annotation,com.google.common.collect,com.google.common.primitives,com.google.common.math"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.hash"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="com.google.common.primitives,com.google.common.base,javax.annotation,com.google.common.math"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.io"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="javax.annotation,com.google.common.base,com.google.common.math,com.google.common.hash,com.google.common.collect,com.google.common.primitives"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.xml"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="com.google.common.escape,javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.reflect"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="javax.annotation,com.google.common.base,com.google.common.collect,com.google.common.primitives"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.math"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+      <directive name="uses" value="com.google.common.base,com.google.common.primitives,javax.annotation"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.google.common.annotations"/>
+      <attribute name="version" type="Version" value="16.0.1"/>
+      <attribute name="bundle-symbolic-name" value="com.google.guava"/>
+      <attribute name="bundle-version" type="Version" value="16.0.1"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.annotation)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.inject)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=sun.misc)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="com.datastax.driver.core"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="2.0.3"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="4d129480fe2d204c704d15b2279863145cd491adc2752a5e9d55d795da954539"/>
+      <attribute name="url" value="https://repo.maven.apache.org/maven2/com/stratio/cassandra/cassandra-driver-core/2.0.3/cassandra-driver-core-2.0.3.jar"/>
+      <attribute name="size" type="Long" value="541407"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="com.datastax.driver.core"/>
+      <attribute name="bundle-version" type="Version" value="2.0.3"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="com.datastax.driver.core"/>
+      <attribute name="bundle-version" type="Version" value="2.0.3"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.datastax.driver.core"/>
+      <attribute name="version" type="Version" value="2.0.3"/>
+      <attribute name="bundle-symbolic-name" value="com.datastax.driver.core"/>
+      <attribute name="bundle-version" type="Version" value="2.0.3"/>
+      <directive name="uses" value="com.codahale.metrics,com.datastax.driver.core.exceptions,com.datastax.driver.core.policies,com.google.common.util.concurrent,javax.net.ssl,org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.handler.codec.frame,org.jboss.netty.handler.codec.oneone,org.jboss.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.datastax.driver.core.exceptions"/>
+      <attribute name="version" type="Version" value="2.0.3"/>
+      <attribute name="bundle-symbolic-name" value="com.datastax.driver.core"/>
+      <attribute name="bundle-version" type="Version" value="2.0.3"/>
+      <directive name="uses" value="com.datastax.driver.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.datastax.driver.core.policies"/>
+      <attribute name="version" type="Version" value="2.0.3"/>
+      <attribute name="bundle-symbolic-name" value="com.datastax.driver.core"/>
+      <attribute name="bundle-version" type="Version" value="2.0.3"/>
+      <directive name="uses" value="com.datastax.driver.core"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.datastax.driver.core.querybuilder"/>
+      <attribute name="version" type="Version" value="2.0.3"/>
+      <attribute name="bundle-symbolic-name" value="com.datastax.driver.core"/>
+      <attribute name="bundle-version" type="Version" value="2.0.3"/>
+      <directive name="uses" value="com.datastax.driver.core,com.datastax.driver.core.policies"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="com.datastax.driver.core.utils"/>
+      <attribute name="version" type="Version" value="2.0.3"/>
+      <attribute name="bundle-symbolic-name" value="com.datastax.driver.core"/>
+      <attribute name="bundle-version" type="Version" value="2.0.3"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.codahale.metrics)(version&gt;=3.0.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.base)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.collect)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.common.util.concurrent)(version&gt;=16.0.0)(!(version&gt;=17.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=net.jpountz.lz4)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.bootstrap)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.buffer)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.channel)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.channel.group)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.channel.socket.nio)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.codec.frame)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.codec.oneone)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.ssl)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.util)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.7.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.xerial.snappy)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="org.jboss.netty"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="4b057c3942441edf88fd3cb936a8e0825d59dc991cfce8fb1f5a9419c4c523e2"/>
+      <attribute name="url" value="https://repo.maven.apache.org/maven2/io/netty/netty/3.9.0.Final/netty-3.9.0.Final.jar"/>
+      <attribute name="size" type="Long" value="1231993"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.serialization"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.handler.codec.replay,org.jboss.netty.channel,org.jboss.netty.handler.codec.oneone,org.jboss.netty.handler.codec.frame"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.util"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.ipfilter"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.logging,org.jboss.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.marshalling"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.marshalling,org.jboss.netty.handler.codec.replay,org.jboss.netty.handler.codec.frame,org.jboss.netty.channel,org.jboss.netty.handler.codec.oneone"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.compression"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel,org.jboss.netty.buffer,org.jboss.netty.handler.codec.oneone"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.execution"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.util,org.jboss.netty.channel,org.jboss.netty.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.http.websocketx"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.util,org.jboss.netty.handler.codec.replay,org.jboss.netty.handler.codec.frame,org.jboss.netty.channel,org.jboss.netty.handler.codec.oneone,org.jboss.netty.logging,org.jboss.netty.handler.codec.http,org.jboss.netty.handler.ssl,org.jboss.netty.handler.codec.base64"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.channel.local"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel,org.jboss.netty.channel.group,org.jboss.netty.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.bootstrap"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel,org.jboss.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.base64"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.handler.codec.oneone,org.jboss.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.timeout"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel,org.jboss.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.channel.socket.nio"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.logging,org.jboss.netty.util,org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.channel.socket"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.spdy"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.handler.codec.frame,org.jboss.netty.handler.codec.compression,org.jboss.netty.handler.codec.http,org.jboss.netty.handler.codec.oneone,javax.net.ssl,org.jboss.netty.handler.ssl"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.http.websocket"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.util,org.jboss.netty.handler.codec.replay,org.jboss.netty.handler.codec.frame,org.jboss.netty.channel,org.jboss.netty.handler.codec.oneone"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.socks"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.util,org.jboss.netty.handler.codec.replay,org.jboss.netty.channel,org.jboss.netty.handler.codec.oneone"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.replay"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.handler.codec.frame,org.jboss.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.string"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.handler.codec.oneone"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.channel"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.util,org.jboss.netty.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.container.spring"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.ssl"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="javax.net.ssl,org.jboss.netty.channel,org.jboss.netty.util,org.jboss.netty.logging,org.jboss.netty.buffer,org.jboss.netty.handler.codec.frame"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.container.microcontainer"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.rtsp"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.handler.codec.http,org.jboss.netty.handler.codec.embedder"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.protobuf"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.handler.codec.oneone,com.google.protobuf,org.jboss.netty.handler.codec.frame"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.http.multipart"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.handler.codec.http,org.jboss.netty.util,org.jboss.netty.handler.stream"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.channel.socket.http"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel,org.jboss.netty.channel.socket,org.jboss.netty.handler.codec.http,javax.net.ssl,org.jboss.netty.handler.ssl,org.jboss.netty.buffer,org.jboss.netty.logging,javax.servlet,org.jboss.netty.channel.local,javax.servlet.http"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.channel.group"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel,org.jboss.netty.buffer,org.jboss.netty.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.embedder"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel,org.jboss.netty.buffer"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.channel.socket.oio"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel.socket,org.jboss.netty.channel,org.jboss.netty.util,org.jboss.netty.buffer,org.jboss.netty.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.traffic"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel,org.jboss.netty.util,org.jboss.netty.logging"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.frame"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.handler.codec.oneone"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.oneone"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.container.osgi"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.logging,org.osgi.framework"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.logging"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.apache.commons.logging,org.jboss.logging,org.apache.log4j,org.osgi.service.log,org.osgi.util.tracker,org.osgi.framework,org.slf4j"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.buffer"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.util"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec.http"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.handler.codec.frame,org.jboss.netty.channel,org.jboss.netty.util,org.jboss.netty.handler.codec,org.jboss.netty.handler.codec.compression,org.jboss.netty.handler.codec.embedder,org.jboss.netty.handler.codec.replay,org.jboss.netty.handler.codec.oneone"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.channel.socket"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.queue"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.channel,org.jboss.netty.buffer"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.logging"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.logging,org.jboss.netty.buffer,org.jboss.netty.channel"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.codec"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.jboss.netty.handler.stream"/>
+      <attribute name="version" type="Version" value="3.9.0.Final"/>
+      <attribute name="bundle-symbolic-name" value="org.jboss.netty"/>
+      <attribute name="bundle-version" type="Version" value="3.9.0.Final"/>
+      <directive name="uses" value="org.jboss.netty.buffer,org.jboss.netty.channel,org.jboss.netty.logging"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=com.google.protobuf)(version&gt;=2.5.0)(!(version&gt;=3.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.activation)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.net.ssl)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.servlet)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=javax.servlet.http)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.commons.logging)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.apache.log4j)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.jboss.logging)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(osgi.wiring.package=org.jboss.marshalling)"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.bootstrap)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.codec.frame)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.codec.oneone)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.codec.protobuf)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.codec.serialization)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.codec.string)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.logging)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.stream)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.jboss.netty.handler.timeout)(version&gt;=3.9.0)(!(version&gt;=4.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))"/>
+      <directive name="resolution" value="optional"/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="slf4j.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.7.5"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="fe30825245d2336c859dc38d60c0fc5f3668dbf29cd586828d2b5667ec355b91"/>
+      <attribute name="url" value="file:/Users/matteorulli/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar"/>
+      <attribute name="size" type="Long" value="26084"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="slf4j.api"/>
+      <attribute name="bundle-version" type="Version" value="1.7.5"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="slf4j.api"/>
+      <attribute name="bundle-version" type="Version" value="1.7.5"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.slf4j"/>
+      <attribute name="version" type="Version" value="1.7.5"/>
+      <attribute name="bundle-symbolic-name" value="slf4j.api"/>
+      <attribute name="bundle-version" type="Version" value="1.7.5"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.slf4j.spi"/>
+      <attribute name="version" type="Version" value="1.7.5"/>
+      <attribute name="bundle-symbolic-name" value="slf4j.api"/>
+      <attribute name="bundle-version" type="Version" value="1.7.5"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.slf4j.helpers"/>
+      <attribute name="version" type="Version" value="1.7.5"/>
+      <attribute name="bundle-symbolic-name" value="slf4j.api"/>
+      <attribute name="bundle-version" type="Version" value="1.7.5"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.slf4j.impl)(version&gt;=1.6.0))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.3))"/>
+    </requirement>
+  </resource>
+</repository>

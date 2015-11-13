@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>bndtools</id>
+			<name>bndtools repository</name>
+			<url>https://bndtools.ci.cloudbees.com/job/bnd.master/lastSuccessfulBuild/artifact/maven/target/m2/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+  <groupId>com.flairbit.cassandra</groupId>
+  <artifactId>java-driver-index</artifactId>
+  <version>2.1.9</version>
+  <packaging>pom</packaging>
+
+  <name>java-driver-index</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+  	<bnd.version>3.1.0</bnd.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+	    <groupId>com.stratio.cassandra</groupId>
+	    <artifactId>cassandra-driver-core</artifactId>
+	    <version>2.0.3</version>
+	    <scope>test</scope>
+	</dependency>
+	<dependency>
+	    <groupId>com.codahale.metrics</groupId>
+	    <artifactId>metrics-core</artifactId>
+	    <version>3.0.2</version>
+	    <scope>test</scope>
+	</dependency>
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-api</artifactId>
+	    <version>1.7.5</version>
+	    <scope>test</scope>
+	</dependency>
+  </dependencies>
+  
+  <build>
+  <plugins>
+	  <plugin>
+	    <groupId>biz.aQute.bnd</groupId>
+	    <artifactId>bnd-indexer-maven-plugin</artifactId>
+	    <version>${bnd.version}</version>
+	    <configuration>
+        	<localURLs>ALLOWED</localURLs>
+        </configuration>
+	    <executions>
+	        <execution>
+	            <id>index</id>
+	            <goals>
+	                <goal>index</goal>
+	            </goals>
+	        </execution>
+	    </executions>
+	</plugin>
+  </plugins>
+  </build>
+</project>
